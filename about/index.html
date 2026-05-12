@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us — Aimop Hires & Car Dealers</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#ba0013',
+            'brand-red': '#e31e24',
+            'accent': '#FFC70E',
+            'on-surface': '#1b1c1c',
+            'secondary': '#5f5e5e',
+            'surface': '#fbf9f8',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header / Nav -->
+<nav class="aimop-nav bg-white border-b border-zinc-200 sticky top-0 z-50 shadow-sm" style="font-family:'Plus Jakarta Sans',sans-serif;">
+  <div class="max-w-[1280px] mx-auto px-8 py-5 flex items-center justify-between w-full relative">
+    <a href="/" class="text-2xl font-black tracking-tighter text-zinc-900 uppercase flex items-center no-underline" style="text-decoration:none;">
+      AIMOP <span style="color:#FFC70E;" class="ml-1">HIRES</span>
+    </a>
+    <div class="hidden md:flex gap-8 items-center font-medium text-sm tracking-wide">
+      <a href="/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Home</a>
+      <a href="/services/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Services</a>
+      <a href="/corporate/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Corporate</a>
+      <a href="/locations/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Locations</a>
+      <a href="/about/" class="text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">About</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="/#booking" class="bg-[#FFC70E] text-black font-bold text-sm px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-[#FFC70E] transition-colors active:scale-95 transform no-underline" style="text-decoration:none;">BOOK NOW</a>
+      <button id="aimop-hamburger" class="md:hidden p-2 text-zinc-800" onclick="document.getElementById('aimop-mobile-menu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="aimop-mobile-menu" class="hidden md:hidden bg-white border-t border-zinc-200">
+    <div class="max-w-[1280px] mx-auto px-8 py-4 flex flex-col gap-4">
+      <a href="/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Home</a>
+      <a href="/services/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Services</a>
+      <a href="/corporate/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Corporate</a>
+      <a href="/locations/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Locations</a>
+      <a href="/about/" class="font-bold uppercase tracking-wider text-sm text-red-600 py-2 no-underline" style="text-decoration:none;">About</a>
+    </div>
+  </div>
+</nav>
+
+<main style="font-family:'Plus Jakarta Sans',sans-serif;">
+
+<!-- Hero Section -->
+<section class="relative py-16" style="background:#fbf9f8;">
+  <div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-12 gap-6 items-center">
+    <div class="md:col-span-6 z-10">
+      <span class="inline-block px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 border-l-4" style="background:#FFC70E;color:#1b1c1c;border-color:#ba0013;">Locally Owned &amp; Operated</span>
+      <h1 class="mb-4" style="font-size:48px;line-height:1.1;font-weight:800;letter-spacing:-0.02em;color:#1b1c1c;">100% Locally Owned, <span style="color:#ba0013;">Rooted</span> in PNG</h1>
+      <p class="max-w-xl" style="font-size:18px;line-height:1.6;color:#5f5e5e;">
+        Registered under IPA, we are a dedicated transport and logistics company providing flexible and convenient solutions across the nation's toughest terrains.
+      </p>
+    </div>
+    <div class="md:col-span-6 relative" style="height:600px;">
+      <img alt="Toyota Land Cruiser 70 Series in PNG highlands" class="w-full h-full object-cover shadow-2xl" style="filter:grayscale(0.2);" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRTGDFnuH3N5lAyO9S4hkbWTzod7jsGzziYdeAoSeK_ya6R59iHHq3o3opOkXLSYcLIJeZiBypJGTY8SPodNmzpy2ZS3PSO3xMQhZPgmHpBY1zO7TgoezXsUkv0-9yame79fcMpZwY1Z-7pJBIz1n9WjxyAd_SHhOqaAcfs0tkn_34Xie2jMGviL1rrHNTx1wLtYk-B22VrjcFQGg67F4QC2PMLD616yYUicR3jTEKLSDhxsW6-uKhEsSMRdue1_PBRi4LojHFrchi"/>
+      <div class="absolute bg-white p-6 border-2 hidden md:block" style="bottom:-2rem;left:-2rem;border-color:#FFC70E;">
+        <p style="font-size:24px;font-weight:700;color:#ba0013;">Est. 2024</p>
+        <p class="font-bold text-sm uppercase" style="color:#5f5e5e;">Papua New Guinean Pride</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-16" style="background:#fff;">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <div class="grid grid-cols-2 gap-2">
+          <img alt="Logistics team in PNG" class="w-full object-cover border-b-4" style="height:256px;border-color:#FFC70E;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB68o16sjHeJURIHxq1TioNnX47DhxwHI4z5GBgTvHbSUU54bXRyJ5DPbiw5c1oLG5Sde_LPRJN2UCrRN8CLCNfnhOJMSMil8ivtlc3WJ1cQL1didAPDuM1HS4q9oCrzxpoOTVDf20XViAzFJBwxIrK0a0Yinc-PvSdX49qT7ICASG5jar-M4-nGy9J0xL-FsFiW604D3Ah9E2GFf7spbEG2xpyUcPwlE7Ry9dhgutVU2jnwSeYYNL8iawbDQdBc_awVlwZh6sZrqHR"/>
+          <img alt="Corporate sedan interior" class="w-full object-cover mt-8 border-t-4" style="height:256px;border-color:#ba0013;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPQPbwecC7ZrNheeopHpfjZ4fUlnoZOVKRJy4ol0qUladeUxIIjBOsvqIKCr4ZrsPvPU8mUxPzvR6N8BECXNwcwRPmBrPvNNAWxOCukKweCFxMDM3vL9REs7a-P98Ps7Pwl-WOMJuFukjB4MmP1xmoDKbLmegZnoWSXHNNFizkbRMWVYMMNtwXFqJXUK_1ViVv6Q2Ygkosx6tdvW6Pg1B3ONd5iTEk1NVOi59zzuKAXPr33eIUOt_QaaeMlJrMUVJBQ6WTXqdBrQ9s"/>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <h2 class="mb-6" style="font-size:32px;font-weight:700;letter-spacing:-0.01em;">Our <span style="color:#FFC70E;">Mission</span></h2>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-3xl" style="color:#ba0013;">verified</span>
+            <div>
+              <h3 class="mb-1" style="font-size:24px;font-weight:700;">Reliability First</h3>
+              <p style="color:#5f5e5e;font-size:16px;">We engineer our operations to ensure that no matter the terrain, your transport is guaranteed and safe.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-3xl" style="color:#FFC70E;">person_celebrate</span>
+            <div>
+              <h3 class="mb-1" style="font-size:24px;font-weight:700;">Customer Centricity</h3>
+              <p style="color:#5f5e5e;font-size:16px;">Our service is built around your schedule, providing flexible hire terms that adapt to corporate needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- History Bento Grid -->
+<section class="py-16" style="background:#fbf9f8;">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="mb-2" style="font-size:32px;font-weight:700;letter-spacing:-0.01em;">Our History &amp; Footprint</h2>
+      <p style="font-size:18px;color:#5f5e5e;">Growing from Port Moresby to serve the entire nation.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4" style="grid-auto-rows:200px;">
+      <div class="md:col-span-2 md:row-span-2 p-8 flex flex-col justify-end text-white" style="background:#1b1c1c;min-height:400px;">
+        <h3 class="mb-4" style="font-size:32px;font-weight:700;">The <span style="color:#FFC70E;">PNG</span> Network</h3>
+        <p class="mb-6 opacity-80" style="font-size:16px;">Established to bridge the gap in high-quality vehicle rentals across the main economic hubs of Papua New Guinea.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 font-bold text-xs uppercase" style="border:1px solid #FFC70E;color:#FFC70E;">Port Moresby</span>
+          <span class="px-3 py-1 font-bold text-xs uppercase" style="border:1px solid rgba(255,255,255,0.3);">Lae</span>
+          <span class="px-3 py-1 font-bold text-xs uppercase" style="border:1px solid rgba(255,255,255,0.3);">Kokopo</span>
+          <span class="px-3 py-1 font-bold text-xs uppercase" style="border:1px solid rgba(255,255,255,0.3);">Madang</span>
+        </div>
+      </div>
+      <div class="md:col-span-2 border-l-4 p-6 flex items-center justify-between" style="background:#efeded;border-color:#FFC70E;">
+        <div>
+          <p style="font-size:48px;font-weight:800;color:#ba0013;">100%</p>
+          <p class="font-bold text-sm uppercase" style="color:#5f5e5e;">Local Ownership</p>
+        </div>
+        <span class="material-symbols-outlined opacity-10" style="font-size:96px;">verified_user</span>
+      </div>
+      <div class="p-6 flex flex-col justify-between text-black" style="background:#FFC70E;">
+        <span class="material-symbols-outlined" style="font-size:48px;">local_shipping</span>
+        <p class="font-bold text-sm uppercase leading-tight">Expert Logistics Support</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between text-white" style="background:#ba0013;">
+        <span class="material-symbols-outlined" style="font-size:48px;">business</span>
+        <p class="font-bold text-sm uppercase leading-tight">IPA Registered Corporation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Commitment Section -->
+<section class="py-16 relative overflow-hidden" style="background:#e9e8e7;">
+  <div class="max-w-[1280px] mx-auto px-6 relative z-10">
+    <div class="bg-white p-12 border border-outline shadow-xl max-w-4xl mx-auto text-center" style="border-color:#926f6b;">
+      <h2 class="mb-6" style="font-size:32px;font-weight:700;letter-spacing:-0.01em;">Our Commitment to <span style="color:#ba0013;">PNG</span></h2>
+      <p class="mb-8 leading-relaxed" style="font-size:18px;color:#5f5e5e;">
+        We are more than just a car dealer and hire company. We are a partner in the development of Papua New Guinea. By employing local talent and reinvesting 100% of our profits back into the local economy, we ensure that every kilometer you drive with us contributes to the nation's growth.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 border-t-2 pt-8" style="border-color:#FFC70E;">
+        <div class="p-4 border-b-2" style="background:#fbf9f8;border-color:#ba0013;">
+          <h4 class="font-bold text-sm uppercase mb-1" style="color:#ba0013;">Bank</h4>
+          <p class="font-bold">BSP Waigani</p>
+        </div>
+        <div class="p-4 border-b-2" style="background:#fbf9f8;border-color:#FFC70E;">
+          <h4 class="font-bold text-sm uppercase mb-1" style="color:#ba0013;">Entity</h4>
+          <p class="font-bold">Kamkabe Investment Ltd</p>
+        </div>
+        <div class="p-4 border-b-2" style="background:#fbf9f8;border-color:#ba0013;">
+          <h4 class="font-bold text-sm uppercase mb-1" style="color:#ba0013;">Availability</h4>
+          <p class="font-bold">24/7 Nationwide</p>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="/#booking" class="inline-block px-10 py-4 text-black font-bold uppercase tracking-widest hover:bg-zinc-900 hover:text-[#FFC70E] transition-all active:scale-95 no-underline" style="background:#FFC70E;text-decoration:none;">Inquire With Us Today</a>
+      </div>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 h-full -skew-x-12 transform translate-x-24 pointer-events-none" style="width:33%;background:rgba(255,199,14,0.1);"></div>
+  <div class="absolute bottom-0 left-0 h-full skew-x-12 transform -translate-x-24 pointer-events-none" style="width:25%;background:rgba(186,0,19,0.05);"></div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-900 border-t border-zinc-800 w-full py-16" style="font-family:'Plus Jakarta Sans',sans-serif;">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-[1280px] mx-auto w-full">
+    <div>
+      <div class="text-xl font-bold text-white mb-6">Aimop <span style="color:#FFC70E;">Hires</span></div>
+      <p class="text-zinc-400 text-xs leading-loose">Reliable transport and logistic solutions across PNG. 100% locally owned and operated with professional excellence.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Branches</h4>
+      <ul class="space-y-3">
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Port Moresby</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Kokopo</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Lae</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Madang</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Operating Hours</h4>
+      <ul class="space-y-3">
+        <li class="text-zinc-500 text-xs">Mon – Fri: 8:00 AM – 5:00 PM</li>
+        <li class="text-zinc-500 text-xs">Saturday: 8:00 AM – 12:00 PM</li>
+        <li class="text-xs" style="color:#FFC70E;">Sunday: On-Call Services</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Payment Details</h4>
+      <div class="bg-zinc-800/50 p-4 border border-zinc-700">
+        <p class="text-white font-semibold text-[10px] uppercase mb-1">BSP Waigani</p>
+        <p class="font-mono text-sm font-bold" style="color:#FFC70E;">Kamkabe Investment Ltd</p>
+        <p class="text-zinc-500 text-[10px] mt-2 italic">Aimop Hires &amp; Car Dealers</p>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[1280px] mx-auto px-8 mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-zinc-500 text-xs">© 2024 Aimop Hires &amp; Car Dealers. All rights reserved. 100% Papua New Guinean Owned.</p>
+    <div class="flex gap-4 items-center">
+      <a href="#" class="w-8 h-8 flex items-center justify-center text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="Facebook" style="background:#ba0013;text-decoration:none;"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center bg-zinc-800 text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="Instagram" style="text-decoration:none;"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center bg-zinc-800 text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="LinkedIn" style="text-decoration:none;"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <div class="flex gap-6">
+      <a href="mailto:aimop.transport@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">aimop.transport@gmail.com</a>
+      <a href="mailto:sales.kamkabe@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">sales.kamkabe@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/67570328408" class="fixed bottom-8 right-8 z-[100] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all" style="background-color:#25D366;" title="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Solutions — Aimop Hires & Car Dealers</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#ba0013',
+            'brand-red': '#e31e24',
+            'accent': '#FFC70E',
+            'on-surface': '#1b1c1c',
+            'secondary': '#5f5e5e',
+            'surface': '#fbf9f8',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header / Nav -->
+<nav class="aimop-nav bg-white border-b border-zinc-200 sticky top-0 z-50 shadow-sm" style="font-family:'Plus Jakarta Sans',sans-serif;">
+  <div class="max-w-[1280px] mx-auto px-8 py-5 flex items-center justify-between w-full relative">
+    <a href="/" class="text-2xl font-black tracking-tighter text-zinc-900 uppercase flex items-center no-underline" style="text-decoration:none;">
+      AIMOP <span style="color:#FFC70E;" class="ml-1">HIRES</span>
+    </a>
+    <div class="hidden md:flex gap-8 items-center font-medium text-sm tracking-wide">
+      <a href="/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Home</a>
+      <a href="/services/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Services</a>
+      <a href="/corporate/" class="text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Corporate</a>
+      <a href="/locations/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">Locations</a>
+      <a href="/about/" class="text-zinc-700 hover:text-red-600 transition-colors duration-200 font-semibold uppercase tracking-wider no-underline" style="text-decoration:none;">About</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="/#booking" class="bg-[#FFC70E] text-black font-bold text-sm px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-[#FFC70E] transition-colors active:scale-95 transform no-underline" style="text-decoration:none;">BOOK NOW</a>
+      <button id="aimop-hamburger" class="md:hidden p-2 text-zinc-800" onclick="document.getElementById('aimop-mobile-menu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="aimop-mobile-menu" class="hidden md:hidden bg-white border-t border-zinc-200">
+    <div class="max-w-[1280px] mx-auto px-8 py-4 flex flex-col gap-4">
+      <a href="/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Home</a>
+      <a href="/services/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Services</a>
+      <a href="/corporate/" class="font-bold uppercase tracking-wider text-sm text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Corporate</a>
+      <a href="/locations/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 border-b border-zinc-100 no-underline" style="text-decoration:none;">Locations</a>
+      <a href="/about/" class="font-bold uppercase tracking-wider text-sm text-zinc-800 hover:text-red-600 py-2 no-underline" style="text-decoration:none;">About</a>
+    </div>
+  </div>
+</nav>
+
+<main style="font-family:'Plus Jakarta Sans',sans-serif;">
+
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden" style="background:#000;">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPOdg7x9D8EJTMdHrlLGKeXiyvxgbXRVNUQ6owZ1Xs0wRl-JhedYYgnQwh7vPgwtvMD9Bag_Jdoxg8ybOn-QayW5iHRoOoY4sz7uQ8y2HjllBuHfn0cQlimBwCVrM65iU7b6tgCNXB9rtuplt_jZ_E0TBEuEDyfixeseDKVzryuFwbfYP2916wMosq5BrD4rn-bQT9CcVRPUDvbPZhrJ4MS20dN_rX_AdtDNExWSm7BXTj76Pkn6em6Z-YRtlMWXhwpbu0o5sVbEhB" alt="Professional fleet of Toyota vehicles in PNG at dusk"/>
+    <div class="absolute inset-0" style="background:linear-gradient(to right,#000,rgba(0,0,0,0.4),transparent);"></div>
+  </div>
+  <div class="relative z-10 max-w-[1280px] mx-auto px-6 py-24">
+    <div class="max-w-3xl">
+      <span class="font-bold text-sm uppercase tracking-[0.2em] mb-4 block" style="color:#FFC70E;">Engineered for Performance</span>
+      <h1 class="text-white mb-6 uppercase" style="font-size:48px;line-height:1.1;font-weight:800;letter-spacing:-0.02em;">Strategic Fleet &amp; Logistics Solutions for Corporate PNG</h1>
+      <p class="mb-10 max-w-xl" style="font-size:18px;color:#d1d5db;line-height:1.6;">Reliable logistics, long-term leasing, and specialized staff transport solutions tailored for the demanding environments of Papua New Guinea.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#corporate-form" class="inline-block text-black font-bold text-sm px-8 py-4 uppercase tracking-widest shadow-lg border transition-all no-underline" style="background:#FFC70E;border-color:#FFC70E;text-decoration:none;">Open a Corporate Account</a>
+        <a href="#corporate-form" class="inline-block border text-white font-bold text-sm px-8 py-4 uppercase tracking-widest hover:bg-white transition-all no-underline" style="border-color:#fff;text-decoration:none;" onmouseover="this.style.color='#000';" onmouseout="this.style.color='#fff';">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust & Credentials -->
+<section class="bg-white border-b border-gray-100 py-12">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <p class="text-gray-500 font-bold text-[11px] uppercase tracking-[0.3em] text-center mb-8">Trusted by National Leaders &amp; Global NGOs</p>
+    <div class="flex flex-wrap justify-center items-center gap-12" style="opacity:0.7;filter:grayscale(1);">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined" style="color:#ba0013;">account_balance</span>
+        <span class="font-bold text-gray-800">Prime Minister &amp; NEC</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined" style="color:#ba0013;">public</span>
+        <span class="font-bold text-gray-800">World Vision</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined" style="color:#ba0013;">water_drop</span>
+        <span class="font-bold text-gray-800">Water Aid</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined" style="color:#ba0013;">school</span>
+        <span class="font-bold text-gray-800">Pacific Adventist Univ.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solutions Bento Grid -->
+<section class="py-24 max-w-[1280px] mx-auto px-6">
+  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+    <div class="max-w-2xl">
+      <h2 class="uppercase mb-4" style="font-size:32px;font-weight:700;letter-spacing:-0.01em;">Industrial-Grade Services</h2>
+      <p style="color:#5f5e5e;font-size:16px;">Optimized for corporate efficiency, our service spectrum covers everything from white-glove staff transit to rugged freight forwarding across the highlands.</p>
+    </div>
+    <div class="h-1 w-24" style="background:#FFC70E;margin-bottom:0.5rem;"></div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-6">
+    <!-- Long-Term Leasing (large) -->
+    <div class="col-span-12 lg:col-span-8 border border-gray-200 p-10 flex flex-col md:flex-row gap-8 items-center overflow-hidden" style="background:#efeded;">
+      <div class="flex-1 order-2 md:order-1">
+        <span class="font-bold text-xs uppercase tracking-widest mb-4 block" style="color:#ba0013;">01. Fleet Reliability</span>
+        <h3 class="uppercase mb-4" style="font-size:24px;font-weight:700;">Long-Term Leasing</h3>
+        <p style="color:#5f5e5e;" class="mb-6">Tax-efficient fleet solutions for mining, construction, and government sectors. All leases include comprehensive 24/7 technical support and periodic maintenance.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3 font-bold text-sm"><span class="material-symbols-outlined" style="color:#FFC70E;">check_circle</span> FULL MAINTENANCE INCLUDED</li>
+          <li class="flex items-center gap-3 font-bold text-sm"><span class="material-symbols-outlined" style="color:#FFC70E;">check_circle</span> TAX-DEDUCTIBLE SOLUTIONS</li>
+        </ul>
+        <a href="#corporate-form" class="font-bold uppercase tracking-widest text-sm flex items-center gap-2 group no-underline" style="color:#ba0013;text-decoration:none;">
+          INQUIRE NOW <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+        </a>
+      </div>
+      <div class="flex-1 order-1 md:order-2">
+        <img class="w-full h-64 object-cover border border-gray-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXp0L_8d6YVsYhBnJ_ULSiJe8jkj8q_C7BXjJyu9HoZew6zg3R_ix3h5ASGu3KuQBRxQAB38ir5jGQLdy5bd0gh-yWHWX6SSw32e8L54eKNUDwTEyUjDLSUbymAwzC7mhD07TSvPkrc4jcQo67wGkjmespMUewbagtY5MQteoJS8wN-ivSqPWpG9f-oIWVSEULFlVFtloJ8oeoFcVqSvdbIkg-Kn6SDdhiEnvSNN9b7wGWlmb9PztblqCabvi0Kev2AIiwauwq8dRa" alt="Fleet maintenance facility"/>
+      </div>
+    </div>
+
+    <!-- Freight Forwarding -->
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white border border-gray-200 p-8">
+      <div class="w-12 h-12 flex items-center justify-center text-white mb-6" style="background:#ba0013;">
+        <span class="material-symbols-outlined">local_shipping</span>
+      </div>
+      <h3 class="uppercase mb-4" style="font-size:24px;font-weight:700;">Freight Forwarding</h3>
+      <p style="color:#5f5e5e;" class="mb-6">Comprehensive cargo handling across PNG. From Port Moresby to the remote highlands, we bridge the gap with secure logistics chains.</p>
+      <div class="border-t border-gray-100 pt-6">
+        <span class="font-bold text-sm border-b-2" style="color:#ba0013;border-color:#FFC70E;">Inter-Province Specialists</span>
+      </div>
+    </div>
+
+    <!-- Staff Transport -->
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white border border-gray-200 p-8">
+      <div class="w-12 h-12 flex items-center justify-center text-white mb-6" style="background:#ba0013;">
+        <span class="material-symbols-outlined">group</span>
+      </div>
+      <h3 class="uppercase mb-4" style="font-size:24px;font-weight:700;">Staff Transport</h3>
+      <p style="color:#5f5e5e;" class="mb-6">Dedicated K55/K77 rates for corporate staff transit. Punctual, safe, and professional pick-up services tailored for corporate schedules.</p>
+      <div class="border-t border-gray-100 pt-6">
+        <span class="font-bold text-sm border-b-2" style="color:#ba0013;border-color:#FFC70E;">Standardized Corporate Rates</span>
+      </div>
+    </div>
+
+    <!-- Escort Services (wide) -->
+    <div class="col-span-12 lg:col-span-8 p-10 flex flex-col justify-between relative overflow-hidden" style="background:#1b1c1c;">
+      <div class="absolute right-0 bottom-0 opacity-10">
+        <span class="material-symbols-outlined text-white" style="font-size:200px;">security</span>
+      </div>
+      <div class="relative z-10">
+        <h3 class="uppercase text-white mb-4" style="font-size:24px;font-weight:700;">Escort &amp; Protection Services</h3>
+        <p class="mb-8 max-w-lg" style="color:#9ca3af;">High-risk environment logistics requires professional security. We provide specialized escort vehicles for VIPs and high-value cargo transit across all PNG provinces.</p>
+      </div>
+      <div class="relative z-10 flex items-center gap-6">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full" style="background:#FFC70E;"></span>
+          <span class="text-white font-bold uppercase text-xs">Vetted Personnel</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full" style="background:#FFC70E;"></span>
+          <span class="text-white font-bold uppercase text-xs">GPS Tracked</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Columns -->
+<section class="py-24" style="background:#f5f3f3;">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <div class="h-1 w-12 mb-6" style="background:#ba0013;"></div>
+        <h4 class="uppercase mb-6" style="font-size:24px;font-weight:700;">Tailored Business Accounts</h4>
+        <p style="color:#5f5e5e;" class="mb-6">Corporate portals for easy booking, monthly consolidated invoicing, and priority vehicle allocation for your executive team.</p>
+        <a href="#corporate-form" class="font-bold uppercase flex items-center gap-2 no-underline" style="color:#ba0013;font-size:14px;text-decoration:none;">Enroll Now <span class="material-symbols-outlined" style="font-size:18px;">arrow_outward</span></a>
+      </div>
+      <div>
+        <div class="h-1 w-12 mb-6" style="background:#ba0013;"></div>
+        <h4 class="uppercase mb-6" style="font-size:24px;font-weight:700;">Priority Fleet Management</h4>
+        <p style="color:#5f5e5e;" class="mb-6">Advanced telemetry and fuel management systems. We don't just provide cars; we manage your operational efficiency.</p>
+        <a href="#corporate-form" class="font-bold uppercase flex items-center gap-2 no-underline" style="color:#ba0013;font-size:14px;text-decoration:none;">View Systems <span class="material-symbols-outlined" style="font-size:18px;">arrow_outward</span></a>
+      </div>
+      <div>
+        <div class="h-1 w-12 mb-6" style="background:#ba0013;"></div>
+        <h4 class="uppercase mb-6" style="font-size:24px;font-weight:700;">Safety &amp; Compliance</h4>
+        <p style="color:#5f5e5e;" class="mb-6">100% PNG-owned and operated with international safety standards. Rigorous 45-point vehicle safety checks before every deployment.</p>
+        <a href="#corporate-form" class="font-bold uppercase flex items-center gap-2 no-underline" style="color:#ba0013;font-size:14px;text-decoration:none;">Policy Docs <span class="material-symbols-outlined" style="font-size:18px;">arrow_outward</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section id="corporate-form" class="py-24 max-w-[1280px] mx-auto px-6">
+  <div class="p-12 lg:p-20 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10" style="background:#ba0013;">
+    <div class="relative z-10 max-w-xl">
+      <h2 class="text-white uppercase mb-6" style="font-size:32px;font-weight:700;">Ready to Optimize Your Logistics?</h2>
+      <p class="font-bold text-sm mb-4" style="color:rgba(255,255,255,0.8);font-size:18px;">Partner with PNG's most reliable corporate car dealer and rental service. Let us handle the terrain while you handle the business.</p>
+      <div class="space-y-3 text-white text-sm">
+        <div class="flex items-center gap-3"><span class="material-symbols-outlined" style="color:#FFC70E;">call</span> +675 7032 8408</div>
+        <div class="flex items-center gap-3"><span class="material-symbols-outlined" style="color:#FFC70E;">mail</span> aimop.transport@gmail.com</div>
+      </div>
+    </div>
+    <div class="relative z-10 flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+      <a href="mailto:aimop.transport@gmail.com?subject=Corporate Account Inquiry" class="inline-block text-black font-bold text-sm px-10 py-5 uppercase tracking-widest shadow-xl transition-all active:scale-95 no-underline" style="background:#FFC70E;text-decoration:none;">Open Corporate Account</a>
+    </div>
+    <div class="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+      <span class="material-symbols-outlined text-white" style="font-size:400px;transform:rotate(-12deg) translate(6rem,3rem);display:block;">business_center</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-900 border-t border-zinc-800 w-full py-16" style="font-family:'Plus Jakarta Sans',sans-serif;">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-[1280px] mx-auto w-full">
+    <div>
+      <div class="text-xl font-bold text-white mb-6">Aimop <span style="color:#FFC70E;">Hires</span></div>
+      <p class="text-zinc-400 text-xs leading-loose">Reliable transport and logistic solutions across PNG. 100% locally owned and operated with professional excellence.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Branches</h4>
+      <ul class="space-y-3">
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Port Moresby</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Kokopo</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Lae</a></li>
+        <li><a href="/locations/" class="text-zinc-500 hover:text-[#FFC70E] transition-colors duration-200 text-xs block no-underline" style="text-decoration:none;">Madang</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Operating Hours</h4>
+      <ul class="space-y-3">
+        <li class="text-zinc-500 text-xs">Mon – Fri: 8:00 AM – 5:00 PM</li>
+        <li class="text-zinc-500 text-xs">Saturday: 8:00 AM – 12:00 PM</li>
+        <li class="text-xs" style="color:#FFC70E;">Sunday: On-Call Services</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-6 text-sm uppercase tracking-wider">Payment Details</h4>
+      <div class="bg-zinc-800/50 p-4 border border-zinc-700">
+        <p class="text-white font-semibold text-[10px] uppercase mb-1">BSP Waigani</p>
+        <p class="font-mono text-sm font-bold" style="color:#FFC70E;">Kamkabe Investment Ltd</p>
+        <p class="text-zinc-500 text-[10px] mt-2 italic">Aimop Hires &amp; Car Dealers</p>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[1280px] mx-auto px-8 mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-zinc-500 text-xs">© 2024 Aimop Hires &amp; Car Dealers. All rights reserved. 100% Papua New Guinean Owned.</p>
+    <div class="flex gap-4 items-center">
+      <a href="#" class="w-8 h-8 flex items-center justify-center text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="Facebook" style="background:#ba0013;text-decoration:none;"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center bg-zinc-800 text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="Instagram" style="text-decoration:none;"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center bg-zinc-800 text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="LinkedIn" style="text-decoration:none;"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <div class="flex gap-6">
+      <a href="mailto:aimop.transport@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">aimop.transport@gmail.com</a>
+      <a href="mailto:sales.kamkabe@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">sales.kamkabe@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/67570328408" class="fixed bottom-8 right-8 z-[100] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all" style="background-color:#25D366;" title="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+</body>
+</html>
