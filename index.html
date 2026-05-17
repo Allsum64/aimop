@@ -168,9 +168,20 @@
 <!-- Fleet & Rates -->
 <section class="py-24" style="font-family:'Plus Jakarta Sans',sans-serif;">
   <div class="max-w-[1280px] mx-auto px-8">
-    <h2 class="text-center mb-16" style="font-size:48px;line-height:1.1;font-weight:800;letter-spacing:-0.02em;">Our Premium <span style="color:#FFC70E;">Fleet</span></h2>
+    <h2 class="text-center mb-6" style="font-size:48px;line-height:1.1;font-weight:800;letter-spacing:-0.02em;">Our Premium <span style="color:#FFC70E;">Fleet</span></h2>
+    <!-- Hire Policy Notes -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <div class="flex items-center gap-2 px-4 py-2 border border-zinc-200 bg-zinc-50">
+        <span class="material-symbols-outlined text-sm" style="color:#FFC70E;">calendar_today</span>
+        <span class="text-xs font-bold uppercase">Minimum hire: 2 days or more</span>
+      </div>
+      <div class="flex items-center gap-2 px-4 py-2 border border-zinc-200 bg-zinc-50">
+        <span class="material-symbols-outlined text-sm" style="color:#FFC70E;">corporate_fare</span>
+        <span class="text-xs font-bold uppercase">Corporate rates differ from individual — <a href="/corporate/" style="color:#ba0013;text-decoration:underline;">enquire separately</a></span>
+      </div>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Mark X / Sedan -->
+      <!-- Corporate Sedans (City Only) -->
       <div class="bg-white border border-outline-variant group overflow-hidden" style="border-color:#e7bdb8;">
         <div class="aspect-video bg-zinc-100 overflow-hidden">
           <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBDVkX6GENo0vsamFHR5fcm1-9A2VzeN7FvEw6HlCBV6mkHzBR3oOMxsOeofA9g-KOTFTt2Xb4Px6lrvJe_leJzz1PBLfOobRs9vCrtglrZ1w9ZFag0-3g4Yb7bAJeai4IF6Ot56FdkyX0HBn0AosvCiN8cMuF7OvNB1bZTSMjjaFAubsXze3OqBW9ODYaMf7EVR87rP5waq_QJejp3p1QUe5M9uxNqW74DpDxdo6Zy1ilaqbpUPFGLgmlg8gpV8yVqTLp7Dl5Xu6o" alt="Toyota Mark X / Mark II Corporate Sedan"/>
@@ -180,6 +191,7 @@
             <div>
               <h4 class="mb-1" style="font-size:24px;font-weight:700;">Corporate Sedans</h4>
               <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Toyota Mark 2 / Mark X</p>
+              <span class="inline-block mt-1 px-2 py-0.5 text-white text-[10px] font-bold uppercase" style="background:#ba0013;">City Limit Only</span>
             </div>
             <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap" style="background:#FFC70E;">K250 <span class="text-[10px] font-normal">/ DAY</span></div>
           </div>
@@ -191,7 +203,7 @@
           <a href="#booking" class="w-full block text-center py-3 font-bold text-sm uppercase text-white hover:text-black transition-colors no-underline" style="background:#1b1c1c;text-decoration:none;" onmouseover="this.style.background='#FFC70E';this.style.color='#000';" onmouseout="this.style.background='#1b1c1c';this.style.color='#fff';">Select Vehicle</a>
         </div>
       </div>
-      <!-- Hilux (Most Popular) -->
+      <!-- Standard 4x4 Hilux (Most Popular) -->
       <div class="bg-white border border-outline-variant group overflow-hidden relative" style="border-color:#e7bdb8;">
         <div class="absolute top-4 right-4 z-10 text-white text-[10px] font-bold px-2 py-1 uppercase" style="background:#ba0013;">Most Popular</div>
         <div class="aspect-video bg-zinc-100 overflow-hidden">
@@ -200,10 +212,15 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <div>
-              <h4 class="mb-1" style="font-size:24px;font-weight:700;">Standard 4x4</h4>
+              <h4 class="mb-1" style="font-size:24px;font-weight:700;">Standard 4x4 Hilux</h4>
               <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Toyota Hilux Single/Double Cab</p>
             </div>
-            <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap" style="background:#FFC70E;">K660 <span class="text-[10px] font-normal">/ DAY</span></div>
+            <div class="text-right">
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">In City</div>
+              <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap mb-1" style="background:#FFC70E;">K660 <span class="text-[10px] font-normal">/ DAY</span></div>
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">Out of City</div>
+              <div class="px-3 py-1 font-bold text-sm whitespace-nowrap" style="background:#e7bdb8;color:#1b1c1c;">K1,000 <span class="text-[10px] font-normal">/ DAY</span></div>
+            </div>
           </div>
           <div class="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-4 mb-6">
             <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">terrain</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">4WD High</span></div>
@@ -213,7 +230,7 @@
           <a href="#booking" class="w-full block text-center text-black py-3 font-bold text-sm uppercase transition-colors no-underline" style="background:#FFC70E;text-decoration:none;" onmouseover="this.style.background='#000';this.style.color='#FFC70E';" onmouseout="this.style.background='#FFC70E';this.style.color='#000';">Select Vehicle</a>
         </div>
       </div>
-      <!-- Land Cruiser Trooper -->
+      <!-- Land Cruiser Trooper 10-Seater -->
       <div class="bg-white border border-outline-variant group overflow-hidden" style="border-color:#e7bdb8;">
         <div class="aspect-video bg-zinc-100 overflow-hidden">
           <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/images/aimop-cruiser-white.jpg" alt="Toyota Land Cruiser Trooper 10-Seater"/>
@@ -222,9 +239,14 @@
           <div class="flex justify-between items-start mb-4">
             <div>
               <h4 class="mb-1" style="font-size:24px;font-weight:700;">Land Cruiser Trooper</h4>
-              <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Specialized 10-Seater</p>
+              <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">10-Seater</p>
             </div>
-            <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap" style="background:#FFC70E;">K850 <span class="text-[10px] font-normal">/ DAY</span></div>
+            <div class="text-right">
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">In City</div>
+              <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap mb-1" style="background:#FFC70E;">K850 <span class="text-[10px] font-normal">/ DAY</span></div>
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">Out of City</div>
+              <div class="px-3 py-1 font-bold text-sm whitespace-nowrap" style="background:#e7bdb8;color:#1b1c1c;">K1,000 <span class="text-[10px] font-normal">/ DAY</span></div>
+            </div>
           </div>
           <div class="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-4 mb-6">
             <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">groups</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">10 Seats</span></div>
@@ -234,9 +256,77 @@
           <a href="#booking" class="w-full block text-center py-3 font-bold text-sm uppercase text-white transition-colors no-underline" style="background:#1b1c1c;text-decoration:none;" onmouseover="this.style.background='#FFC70E';this.style.color='#000';" onmouseout="this.style.background='#1b1c1c';this.style.color='#fff';">Select Vehicle</a>
         </div>
       </div>
+      <!-- 5-Door 4x4 Hilux -->
+      <div class="bg-white border border-outline-variant group overflow-hidden" style="border-color:#e7bdb8;">
+        <div class="aspect-video bg-zinc-100 overflow-hidden flex items-center justify-center">
+          <span class="material-symbols-outlined" style="font-size:80px;color:rgba(186,0,19,0.15);">directions_car</span>
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h4 class="mb-1" style="font-size:24px;font-weight:700;">5-Door 4x4 Hilux</h4>
+              <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Toyota Hilux 5-Door</p>
+            </div>
+            <div class="text-right">
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">In City</div>
+              <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap mb-1" style="background:#FFC70E;">K900 <span class="text-[10px] font-normal">/ DAY</span></div>
+              <div class="text-[10px] font-bold uppercase mb-0.5" style="color:#5f5e5e;">Out of City</div>
+              <div class="px-3 py-1 font-bold text-sm whitespace-nowrap" style="background:#e7bdb8;color:#1b1c1c;">K1,100 <span class="text-[10px] font-normal">/ DAY</span></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-4 mb-6">
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">door_front</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">5 Doors</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">terrain</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">4WD</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">construction</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">Rugged</span></div>
+          </div>
+          <a href="#booking" class="w-full block text-center py-3 font-bold text-sm uppercase text-white transition-colors no-underline" style="background:#1b1c1c;text-decoration:none;" onmouseover="this.style.background='#FFC70E';this.style.color='#000';" onmouseout="this.style.background='#1b1c1c';this.style.color='#fff';">Select Vehicle</a>
+        </div>
+      </div>
+      <!-- SUV Executive -->
+      <div class="bg-white border border-outline-variant group overflow-hidden" style="border-color:#e7bdb8;">
+        <div class="aspect-video bg-zinc-100 overflow-hidden flex items-center justify-center">
+          <span class="material-symbols-outlined" style="font-size:80px;color:rgba(186,0,19,0.15);">airport_shuttle</span>
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h4 class="mb-1" style="font-size:24px;font-weight:700;">SUV Executive</h4>
+              <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Harrier / Nissan X-Trail ACU30</p>
+            </div>
+            <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap" style="background:#FFC70E;">K450 <span class="text-[10px] font-normal">/ DAY</span></div>
+          </div>
+          <div class="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-4 mb-6">
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">airline_seat_recline_normal</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">5 Seats</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">ac_unit</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">Executive</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">star</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">Premium</span></div>
+          </div>
+          <a href="#booking" class="w-full block text-center py-3 font-bold text-sm uppercase text-white transition-colors no-underline" style="background:#1b1c1c;text-decoration:none;" onmouseover="this.style.background='#FFC70E';this.style.color='#000';" onmouseout="this.style.background='#1b1c1c';this.style.color='#fff';">Select Vehicle</a>
+        </div>
+      </div>
+      <!-- SUV Standard -->
+      <div class="bg-white border border-outline-variant group overflow-hidden" style="border-color:#e7bdb8;">
+        <div class="aspect-video bg-zinc-100 overflow-hidden flex items-center justify-center">
+          <span class="material-symbols-outlined" style="font-size:80px;color:rgba(186,0,19,0.15);">directions_car</span>
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h4 class="mb-1" style="font-size:24px;font-weight:700;">SUV Standard</h4>
+              <p class="text-xs uppercase tracking-wider" style="color:#5f5e5e;">Standard SUV</p>
+            </div>
+            <div class="px-3 py-1 text-black font-bold text-sm whitespace-nowrap" style="background:#FFC70E;">K350 <span class="text-[10px] font-normal">/ DAY</span></div>
+          </div>
+          <div class="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-4 mb-6">
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">airline_seat_recline_normal</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">5 Seats</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">ac_unit</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">Climate</span></div>
+            <div class="text-center"><span class="material-symbols-outlined text-sm block mb-1" style="color:#5f5e5e;">settings</span><span class="text-[10px] font-bold uppercase" style="color:#5f5e5e;">Automatic</span></div>
+          </div>
+          <a href="#booking" class="w-full block text-center py-3 font-bold text-sm uppercase text-white transition-colors no-underline" style="background:#1b1c1c;text-decoration:none;" onmouseover="this.style.background='#FFC70E';this.style.color='#000';" onmouseout="this.style.background='#1b1c1c';this.style.color='#fff';">Select Vehicle</a>
+        </div>
+      </div>
     </div>
     <div class="mt-12 text-center">
-      <p class="mb-4" style="font-size:16px;color:#5f5e5e;">Need something bigger? We also offer Coaster Buses (K770/day) and Executive Hilux (K800/day).</p>
+      <p class="mb-4" style="font-size:16px;color:#5f5e5e;">Need something bigger? We also offer Coaster Buses and Executive Hilux.</p>
       <a href="/services/" class="font-bold text-sm border-b-2 pb-1 hover:text-[#FFC70E] transition-colors no-underline" style="color:#ba0013;border-color:#FFC70E;text-decoration:none;">VIEW FULL PRICING LIST</a>
     </div>
   </div>
@@ -274,7 +364,7 @@
           <span class="material-symbols-outlined" style="color:#FFC70E;">mail</span>
           <div>
             <h4 class="font-bold text-sm">Official Inquiries</h4>
-            <p style="color:#5f5e5e;font-size:16px;">aimop.transport@gmail.com</p>
+            <p style="color:#5f5e5e;font-size:16px;">enquiries@aimop.com.pg</p>
             <p style="color:#5f5e5e;font-size:16px;">sales.kamkabe@gmail.com</p>
           </div>
         </div>
@@ -283,7 +373,7 @@
     <div class="p-10 border border-zinc-200" style="background:#f9fafb;">
       <div class="w-12 h-1 mb-4" style="background:#FFC70E;"></div>
       <h3 class="mb-6" style="font-size:24px;font-weight:700;">Booking Inquiry</h3>
-      <form class="space-y-4" action="mailto:aimop.transport@gmail.com" method="post" enctype="text/plain">
+      <form class="space-y-4" action="mailto:enquiries@aimop.com.pg" method="post" enctype="text/plain">
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-1">
             <label class="text-xs font-bold uppercase">Full Name</label>
@@ -297,14 +387,16 @@
         <div class="space-y-1">
           <label class="text-xs font-bold uppercase">Vehicle / Service Type</label>
           <select class="w-full bg-white border border-zinc-200 p-3 text-sm focus:outline-none focus:border-[#FFC70E]" name="service">
-            <option>Toyota Hilux (Standard) — K660/day</option>
-            <option>Toyota Mark X (Sedan) — K250/day</option>
-            <option>Land Cruiser Trooper — K850/day</option>
-            <option>Coaster Bus — K770/day</option>
+            <option>Standard 4x4 Hilux — K660/day (city) | K1,000/day (out of city)</option>
+            <option>5-Door 4x4 Hilux — K900/day (city) | K1,100/day (out of city)</option>
+            <option>Land Cruiser Trooper (10-seater) — K850/day (city) | K1,000/day (out of city)</option>
+            <option>SUV Executive (Harrier / X-Trail ACU30) — K450/day</option>
+            <option>SUV Standard — K350/day</option>
+            <option>Corporate Sedan (city only) — K250/day</option>
             <option>Airport Transfer (Standard) — K55</option>
             <option>Airport Transfer (After Hours) — K77</option>
             <option>Logistics / Freight</option>
-            <option>Corporate Fleet / Long-Term</option>
+            <option>Corporate Fleet / Long-Term (contact for rates)</option>
           </select>
         </div>
         <div class="space-y-1">
@@ -358,7 +450,7 @@
       <a href="#" class="w-8 h-8 flex items-center justify-center bg-zinc-800 text-white hover:text-[#FFC70E] transition-all duration-300 no-underline" title="LinkedIn" style="text-decoration:none;"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
     <div class="flex gap-6">
-      <a href="mailto:aimop.transport@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">aimop.transport@gmail.com</a>
+      <a href="mailto:enquiries@aimop.com.pg" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">enquiries@aimop.com.pg</a>
       <a href="mailto:sales.kamkabe@gmail.com" class="text-zinc-500 hover:text-[#FFC70E] text-xs transition-colors no-underline" style="text-decoration:none;">sales.kamkabe@gmail.com</a>
     </div>
   </div>
