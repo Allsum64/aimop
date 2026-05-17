@@ -373,7 +373,7 @@
     <div class="p-10 border border-zinc-200" style="background:#f9fafb;">
       <div class="w-12 h-1 mb-4" style="background:#FFC70E;"></div>
       <h3 class="mb-6" style="font-size:24px;font-weight:700;">Booking Inquiry</h3>
-      <form class="space-y-4" action="mailto:enquiries@aimop.com.pg" method="post" enctype="text/plain">
+      <form class="space-y-4" onsubmit="aimopSubmitBooking(this); return false;">
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-1">
             <label class="text-xs font-bold uppercase">Full Name</label>
@@ -405,6 +405,12 @@
         </div>
         <button class="w-full text-black py-4 font-bold text-sm tracking-widest uppercase transition-colors" style="background:#FFC70E;" onmouseover="this.style.background='#000';this.style.color='#FFC70E';" onmouseout="this.style.background='#FFC70E';this.style.color='#000';" type="submit">Submit Inquiry</button>
       </form>
+      <script>
+        function aimopSubmitBooking(f) {
+          var body = 'Name: ' + f.name.value + '\nPhone: ' + f.phone.value + '\nService: ' + f.service.value + '\nMessage: ' + f.message.value;
+          window.location.href = 'mailto:enquiries@aimop.com.pg?subject=Booking%20Inquiry&body=' + encodeURIComponent(body);
+        }
+      </script>
     </div>
   </div>
 </section>
